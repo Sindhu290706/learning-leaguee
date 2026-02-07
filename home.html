@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StyleAI - Fashion Advisor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>👗 StyleAI - Fashion Advisor</h1>
+    <p>Upload your photo and get AI-powered fashion advice</p>
+
+    <form action="/result" method="POST" enctype="multipart/form-data" id="uploadForm">
+        
+        <div class="upload-box" id="dropArea">
+            <p>Drag & Drop your image here</p>
+            <span>or</span>
+            <input type="file" name="image" id="fileInput" accept="image/*" required>
+        </div>
+
+        <div class="gender-box">
+            <label><input type="radio" name="gender" value="Male" checked> Male</label>
+            <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+
+        <button type="submit" class="btn">Get Style Advice</button>
+    </form>
+
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Analyzing your style...</p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StyleAI</title>
+</head>
+<body>
+    <h1>StyleAI - Fashion Advisor</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required><br><br>
+
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <button type="submit">Get Style Advice</button>
+    </form>
+
+    {% if result %}
+        <h2>Result</h2>
+        <p><b>Skin Tone:</b> {{ result.skin_tone }}</p>
+        <p><b>Suggestion:</b> {{ result.suggestion }}</p>
+        <p><b>Gender:</b> {{ result.gender }}</p>
+    {% endif %}
+</body>
+</html>

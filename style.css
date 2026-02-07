@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.upload-box {
+    border: 2px dashed #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.upload-box input {
+    margin-top: 10px;
+}
+
+.gender-box {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #ff9800;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #ffc107;
+}
+
+.loading {
+    display: none;
+    margin-top: 20px;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 5px solid #fff;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.card.big {
+    text-align: left;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-family: inherit;
+}

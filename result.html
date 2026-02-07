@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your AI Style Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>✨ Your AI Style Report</h1>
+
+    <div class="card">
+        <h3>Skin Tone</h3>
+        <p>{{ skin_tone }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Gender</h3>
+        <p>{{ gender }}</p>
+    </div>
+
+    <div class="card big">
+        <h3>🤖 AI Fashion Advice</h3>
+        <pre>{{ ai_text }}</pre>
+    </div>
+
+    <a href="/" class="btn">⬅ Try Another Image</a>
+</div>
+
+</body>
+</html>
